@@ -7,7 +7,7 @@ fruitsMod.style.borderRadius = '5px';
 fruitsMod.style.listStyleType = 'none';
 
 const mainHeading = document.querySelector('#main-heading');
-mainHeading.style.textAlign = 'right';
+mainHeading.style.textAlign = 'center';
 
 const fruits = document.querySelector('.fruits');
 fruits.style.backgroundColor = 'gray';
@@ -47,6 +47,7 @@ const divs = document.getElementsByTagName('div');
 divs[0].appendChild(subHeading);
 
 divs[0].lastElementChild.style.fontStyle = 'italic';
+divs[0].lastElementChild.style.textAlign = 'center';
 
 const para = document.createElement('p');
 const paraText = document.createTextNode('Total fruits: 4');
@@ -54,4 +55,5 @@ para.appendChild(paraText);
 
 const ul = document.querySelector('.fruits');
 divs[1].insertBefore(para,ul);
+ul.previousSibling.style.margin='30px';
 para.setAttribute('id','fruits-total');
