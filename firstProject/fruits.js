@@ -7,4 +7,10 @@ headingEdit.style.borderBottom = '5px solid orange';
 const secondHeading = document.getElementById('basket-heading');
 secondHeading.style.color = 'green';
 const exit = document.getElementById('thanks');
-exit.innerHTML = '<p>Please visit us again</p>'
+exit.innerHTML = '<p>Please visit us again</p>';
+
+const fruits = document.getElementsByClassName('fruit');
+fruits[2].style.backgroundColor = "yellow";
+for(let i=0; i<fruits.length; i++) {
+  fruits[i].style.fontWeight = 'bold';
+}
