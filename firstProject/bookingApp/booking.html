@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="margin: 0">
+    <!-- Write your code below -->
+    <label form="booking"><b>Booking Appointment App</b></label>
+    <hr>
+    <form id="booking" onsubmit="formSubmitEvent(event)">
+      <label for='u_name'>User name:</label>
+      <input id='u_name' type='text' name='username'>
+      <br><br>
+      <label for='u_email'>Email:</label>
+      <input id='u_email' type='email' name='useremail'>
+      <br><br>
+      <label for='phno'>Phone No.:</label>
+      <input id='phno' type='tel' name='phoneno'>
+      <br><br>
+      <button id=btn type='submit' style="margin-left:10px">Submit</button>
+    </form>
+  </body>
+  <script src="booking.js"></script>
+</html>
