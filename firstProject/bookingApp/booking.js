@@ -1,4 +1,4 @@
-function formSubmitEvent(event) {
+function handleFormSubmit(event) {
     event.preventDefault();
     const name = event.target.username.value;
     const email = event.target.useremail.value;
