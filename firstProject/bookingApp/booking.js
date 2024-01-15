@@ -1,17 +1,29 @@
 // Write your code below:
 function handleFormSubmit(event) {
   event.preventDefault();
-  const userName = event.target.username.value;
-  const userEmail = event.target.email.value;
-  const userNo = event.target.phone.value;
+  const username = event.target.username.value;
+  const email = event.target.email.value;
+  const phone = event.target.phone.value;
 
   const userDetails = {
-    Name : userName,
-    Email : userEmail,
-    PhoneNo : userNo
+    username,
+    email,
+    phone
   };
 
-  localStorage.setItem("User Details",JSON.stringify(userDetails));
+  localStorage.setItem(userDetails.email,JSON.stringify(userDetails));
+  addListItem(userDetails);
 }
+
+function addListItem(userDetails) {
+  const ul = document.getElementById('listOfItems');
+  const li = document.createElement('li');
+  const liText = document.createTextNode(userDetails.username+' - '+userDetails.email+' - '+userDetails.phone);
+  li.appendChild(liText);
+  ul.appendChild(li);
+}
+
+
+
 
   
